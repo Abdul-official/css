@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: lightcyan;
+    border: 2px solid blue; 
+    padding: 50px;
+    margin: 20px;
+    border-radius: 10px;
+
+    /*padding : 20px 30px 10px 5px;  (top right bottom left)
+      margin  : 34px 19px ;          y(top/bottom)  x(left/right)*/
+
+    /*we can set top bottom left right on padding and margin
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+    */
+
+}
