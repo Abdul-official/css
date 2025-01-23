@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: lightgrey;
+    width: 600px;
+    border: 2px solid red;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+h2{
+    text-align: center;
+}
+
+.btn{
+    padding: 5px;
+    margin: 10px 0 0 0 ;
+    border: 1px solid blue;
+    text-decoration: none;
+    color: black;
+    background-color: lightseagreen; 
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.btn:hover{
+    background-color: black;
+    color: white;
+
+}
+
+.btn:visited{
+    background-color: blue;
+    color: white;
+} 
+
+.btn:active{
+    background-color: lightgreen;
+    color: black;
+}
