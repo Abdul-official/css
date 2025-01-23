@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'poppins',sans-serif;
+}
+h1{
+    width: 400px;
+    margin: auto;
+    text-align: center;
+}
+.container{
+    background-color: lightcyan;
+    border: 3px solid rgb(85, 16, 85);
+    width: 700px;
+    margin: 10px auto;
+}
+
+.items{
+    background-color: lightgreen;
+    border: 1px solid red;
+    margin: 10px 15px;
+    padding: 5px 10px
+}
+
+#fruit{
+    float: left;
+    width: 45%;
+
+}
+
+#glass{
+    float: right;
+    width: 45%;
+}
+
+#computer{
+    clear: both;
+}
+
