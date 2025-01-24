@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: rgb(238, 189, 170);
+        }
+
+        .wrapper{
+            background-color: lightseagreen;
+            height: 1330px;
+        }
+         
+        .container{
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            border: 2px solid red;
+            background-color: lightgrey;
+            margin: 0px 5px;
+        }
+            
+        /* apple box */
+        
+        #box1{
+              position: absolute;
+               text-align: center;
+        }
+         
+        /* orange box */
+        #box2{
+            position: relative;
+            text-align: center;
+        }
+           
+       /* mangos box  */
+        #box3{
+            position: fixed;
+             text-align: center;
+             bottom: 2px;
+             right: 2px;
+        
+        }
+           
+        /* grapes box */
+        #box4{
+            position: sticky;
+            text-align: center;
+            top: 5px;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container" id="box1">Apple</div>
+        <div class="container" id="box2">Orange</div>
+        <div class="container" id="box3">Mango</div>
+        <div class="container" id="box4">Grapes</div>
+    </div>
+</body>
+</html>
