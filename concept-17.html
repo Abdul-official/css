@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Quaries</title>
+
+    <style>
+           *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+           }
+
+           body{
+            background-color: lightgreen;
+           }
+
+           .container{
+               background-color: tomato;
+               border: 2px solid black;
+               font-size: 20px;
+            }
+            
+            .items{
+               display: none;
+            text-align: center;
+            font-size: 1em;
+           }
+
+           /* #items1{background-color: yellow;}
+           #items2{background-color: green;}
+           #items3{background-color: orangered;}
+           #items4{background-color: cyan;} */
+
+           @media (min-width:100px) and (max-width:300px){
+            #items1{
+                display: block;
+                background-color: yellow;
+            }
+           }
+
+           @media (min-width:300px) and (max-width:500px){
+            #items2{
+                display: block;
+                background-color: cyan;
+            }
+           }
+
+
+           @media (min-width:550px) and (max-width:800px){
+            #items3{
+                display: block;
+                background-color: red;
+            }
+           }
+
+           @media (min-width:800px){
+            #items4{
+                display: block;
+                background-color: blue;
+            }
+           }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="items" id="items1">This is My MObile Device</div>
+        <div class="items" id="items2">This is My Tablet Device</div>
+        <div class="items" id="items3">This is My Desktop Device</div>
+        <div class="items" id="items4">This is My Wide-Screen Device</div>
+
+    </div>
+</body>
+</html>
