@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More On Selectors</title>
+
+    <style>
+              *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+              }
+
+              .container{
+                background-color: lightgrey;
+                border: 1px solid red;
+        
+              }
+
+              #box1 , #box2{
+                margin: 8px;
+              }
+
+              div > p{
+                background-color: gold;
+              }
+
+              div + p{
+                background-color: tomato;
+                margin: 4px 0;
+              }
+    </style>
+
+</head>
+<body>
+    <h1>More Selector</h1>
+
+    <div class="container">
+        <div id="box1">
+            <ul>
+                <li><p>Lorem ipsum dolor sit amet.</p></li>
+            </ul>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, porro!</p>
+        </div>
+        
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+
+        <div id="box2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, error.</p>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+    </div>
+</body>
+</html>
