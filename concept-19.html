@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes & Nth Child</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            display:block;
+            border: 2px solid red;
+            background-color: lightgrey;
+            width: 340px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        li{
+            list-style: none;
+        }
+        
+        li:nth-child(3){
+            color: red;
+        }
+
+        /* li:nth-child(odd){
+            background-color: lightskyblue;
+        }
+
+        li:nth-child(even){
+            background-color: chartreuse;
+        } */
+
+        li:nth-child(2n+1){
+            background-color: lightseagreen;
+        }
+         
+        input{
+            padding: 4px;
+            margin: 4px;
+            border: 1px solid black;
+            border-radius: 50px;
+        }
+
+        .Box{
+            margin: 8px 0px;
+        }
+
+        input[type='text']{
+           background-color: lightgreen;
+        
+        }
+
+        input[type="email"]{
+            background-color: lightblue;
+        }
+
+        input[type="submit"]{
+            background-color: rgb(147, 241, 147);
+        }
+
+        
+
+    </style>
+
+
+</head>
+<body>
+    <div class="container">
+        <div>
+        <input type="text" name="myName" id="" placeholder="Enter Your Name">
+        <input type="email" name="myEmail" id="" placeholder="Enter Your Email Id">
+        <input type="submit" value="Submit">
+    </div>
+        <ul>
+          <li class="Box" id="item1">First</li>
+          <li class="Box" id="item2">Second</li>
+          <li class="Box" id="item3">Third</li>
+          <li class="Box" id="item4">Fourth</li>
+          <li class="Box" id="item5">Fifth</li>
+          <li class="Box" id="item6">Sixth</li>
+          <li class="Box" id="item7">Seventh</li>
+          <li class="Box" id="item8">Eight</li>
+        </ul>
+    </div>
+</body>
+</html>
