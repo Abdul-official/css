@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Varibles</title>
+
+    <style>
+          *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+
+          :root{
+            --box-color:red;
+            --box-width:100px;
+            --box-height:100px;
+            --box-radius:50%;
+         }
+
+
+          .container{
+            display: flex;
+            background-color: var(--bax-color);
+          }      
+
+          .box{
+            width: 300px;
+            height: 300px;
+            margin: 8px;
+            background-color:black;
+          }
+
+          #box1{
+            width: var(--box-width);
+          }
+
+          #box2{
+            height: var(--box-height);
+          }
+
+          #box3{
+            background-color: var(--box-color);
+          }
+          #box4{
+            background-color: var(--box-color);
+            width: var(--box-width);
+            height: var(--box-height);
+            border-radius: var(--box-radius);
+          }
+    </style>
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+</body>
+</html>
