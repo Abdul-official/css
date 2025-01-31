@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation and keyframe</title>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        display: flex;
+        background-color: lightgreen;
+    }
+    .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 200px;
+        background-color: lightgrey;
+        animation-name: animate;
+        animation-duration: 0.8s;
+        animation-delay: 1s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+    }
+    .box p{
+        font-size: 30px;
+        text-align: center;
+        justify-items: center;
+        align-items: center;
+    }
+    @keyframes animate{
+        form{
+           width: 100px;
+           height: 200px;
+        }
+        to{
+            width: 1200px;
+            height: 200px;
+        }
+        0%{
+          background-color: red;
+        }
+        50%{
+           background-color: green;
+        }
+        75%{
+           background-color: blue;
+        }
+        100%{
+          background-color: orange;
+        }
+
+    }
+
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">
+             <p>Hello World!</p>
+        </div>
+    </div>
+</body>
+</html>
